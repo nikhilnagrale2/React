@@ -11,6 +11,9 @@ logs
 # The file containing environment variables 
 .env
 
+# ES Lint Cache
+.eslintcache
+
 # Ignore IDE specific files
 .idea/
 .vscode/
