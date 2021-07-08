@@ -445,4 +445,15 @@ function App() {
 
 ### Splitting Components Into Multiple Components
 
-### Concept of Composition (children props)
+### Concept of Composition (children props) (Wrapper Components)
+
+```js
+import "./Card.css";
+
+function Card(props) {
+  const classes = "card " + props.className;
+  return <div className={classes}>{props.children}</div>;
+}
+
+export default Card;
+```
