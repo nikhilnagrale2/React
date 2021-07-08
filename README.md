@@ -401,3 +401,23 @@ export default ExpenseItem;
 ```
 
 ### Adding Basic CSS Styling
+
+### Outputting Dynamic Data & Working with expressions in JSX
+
+```js
+function ExpenseItem() {
+  const expenseDate = new Date(2021, 2, 28);
+  const expenseTitle = "Car Insurance";
+  const expenseAmount = 294.24;
+
+  return (
+    <div className="expense-item">
+      <div>Match 28th 2021</div>
+      <div className="expense-item__description">
+        <h2>{expenseTitle}</h2>
+        <div className="expense-item__price">$294.56</div>
+      </div>
+    </div>
+  );
+}
+```
