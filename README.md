@@ -442,3 +442,7 @@ function App() {
 ### Adding Normal Javascipt logic to components
 
 - using {}
+
+### Splitting Components Into Multiple Components
+
+### Concept of Composition (children props)
