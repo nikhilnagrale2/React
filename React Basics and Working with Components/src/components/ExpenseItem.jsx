@@ -1,7 +1,11 @@
 function ExpenseItem() {
   return (
     <div>
-      <h2>Expense item!</h2>
+      <div>Match 28th 2021</div>
+      <div>
+        <h2>Car Insurance</h2>
+        <div>$294.56</div>
+      </div>
     </div>
   );
 }
