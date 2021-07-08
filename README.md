@@ -438,3 +438,7 @@ function App() {
   );
 }
 ```
+
+### Adding Normal Javascipt logic to components
+
+- using {}
