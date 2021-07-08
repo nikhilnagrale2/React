@@ -12,6 +12,7 @@
 ### Why React instead of Just Javascript
 
 - It makes building modern, rich, complex user interfaces easier by giving a higher lever syntax where we write code in a declarative, component focused way.
+- imperative one is plain javascript
 
 ### Single Page Applications
 
@@ -299,5 +300,84 @@ printName({ name: "Max", age: 28 }); // prints 'Max')
 - We get the same result as above but we save some code.
   By destructuring, we simply pull out the name property and store it in a variable/ argument named name which we then can use in the function body.
 
+---
+
 ## React Basics & Working With Components
 
+### What are Components and why is react all about them
+
+- React is all about Component.
+  Because all user interfaces in the end are made up of components.
+
+- Why Components?
+  - Reusabliliy - Don't repeat yourself.
+  - Separation of Concerns - Don't do too many things in one and the same place ( function ).
+
+### How is a Component Built?
+
+- React allows you to create re-usable and reactive components consisting of HTML and JavaScript
+
+- Declarative Approach - define the desired target state and let React figure out the actual JavaScript DOM instructions.
+
+### How to Create a React Project
+
+- Also need to install NodeJS
+
+- [Create-React-App](https://create-react-app.dev/)
+
+```js
+npx create-react-app my-app-name
+```
+
+Above code will create react app with some default code and will create good dev environment.
+
+```js
+npm start
+```
+
+- above code will start server and it will start on localhost:3000
+
+### Analyzing a Standard React Project
+
+- import React-dom from react-dom
+- import react from react
+
+```js
+ReactDOM.render(<App />, document.getElementById("root"));
+```
+
+- JSX
+- App here is a Component
+
+### Introducing JSX
+
+```js
+function App() {
+  return (
+    <div>
+      <h2>Let's get started!</h2>
+    </div>
+  );
+}
+export default App;
+```
+
+### How React Works
+
+### Building First Custom Component
+
+```js
+function ExpenseItem() {
+  return (
+    <div>
+      <h2>Expense item!</h2>
+    </div>
+  );
+}
+
+export default ExpenseItem;
+```
+
+```js
+import ExpenseItem from "./components/ExpenseItem";
+```
