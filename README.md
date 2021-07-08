@@ -457,3 +457,35 @@ function Card(props) {
 
 export default Card;
 ```
+
+### A Closer Look at JSX
+
+code without JSX
+
+```js
+return React.createElement(
+  "div",
+  {},
+  React.createElement("h2", {}, "Let's get Started!"),
+  React.createElement(Expenses, { items: expenses })
+);
+```
+
+code with JSX
+
+```js
+return (
+  <div>
+    <h2>Let's get started!</h2>
+    <Expenses items={expenses} />
+  </div>
+);
+```
+
+### Organizing Component Files
+
+### An alternation function Syntax
+
+```js
+const App = () => {};
+```
